@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ShowAlp</title>
+  <link rel="stylesheet" href="css/style.min.css">
+ <!-- <style>
+    HTML {
+    opacity: 0.5;
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      background-image: url( "img/snowalp-desktop.jpg" );
+     // position: absolute;
+   z-index: 10;
+   
+    }
+    /* Tablet */
+    @media ( max-width: 1023px ) {
+      HTML {
+        background-image: url( "img/snowalp-tablet.jpg" );
+      }
+    }
+    /* mobile */
+    @media ( max-width: 767px ) {
+      HTML {
+        background-image: url( "img/snowalp-mobile.jpg" );
+      }
+    }
+  </style>-->
+</head>
+<body>
+  <header class="header">
+    <div class="header__layer">
+      <div class="header__wrapper">
+        
+        <div class="header__row">
+          <button class="header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <section class="header__about-us about-us">
+            <h1 class="visually-hidden">Про нас</h1>
+            <ul class="about-us__list">
+              <li class="about-us__item">Снег и лёд могут появиться неожиданно, <a class="about-us__link">поэтому мы работаем 24/7</a></li>
+              <li class="about-us__item">Мы открыты для предложений и идей - <a class="about-us__link about-us__link--email">hello@snow-alp.ru</a></li>
+              <li class="about-us__item">Мы легко можем перезвонить сами - <a class="about-us__link about-us__link--callback">обратный звонок</a></li>
+            </ul>
+          </section>
+          <section class="header__logo-menu logo-menu">
+            <h1 class="visually-hidden">Лого и меню</h1>
+            <div class="header__logo logo">
+              <a class="logo__link">
+                <img class="logo__icon" src="img/icon-logo.svg" alt="snow-alp">
+                <span class="logo__text">Чистка снега и наледи с кровли</span>
+              </a>
+            </div>
+            <ul class="header__menu menu">
+              <li class="menu__item"><a class="menu__link">Цены</a></li>
+              <li class="menu__item"><a class="menu__link">Преимущества</a></li>
+              <li class="menu__item"><a class="menu__link">Отзывы</a></li>
+              <li class="menu__item"><a class="menu__link">Контакты</a></li>
+            </ul>
+            <div class="header__phone phone">
+              <a class="phone__link" href="tel:+74953355353">+7 495 <span class="phone__number">335 53 53</span></a>
+            </div>
+          </section>
+          <button class="header__whatsup" type="button">
+            <span class="header__whatsup-text">написать в</span>
+            <a class="header__whatsup-link"><img class="header__whatsup-image" src="img/icon-whatsup.png" width="16" height="16">
+              <span class="header__whatsup-text">whatsup</span>
+            </a>
+          </button>
+        </div>
+        <section class="promo">
+          <h2 class="promo__header">Очистка снега с крыш</h2>
+          <p class="promo__text">Промышленными альпинистами от 25 руб/м<sup>2</sup></p>
+          <form class="promo__form form" method="POST" action="#">
+            <p class="form__text">Оставьте заявку - в течение часа к вам выедет специалист</p>
+            <ul class="form__list">
+              <li class="form__item form__item--name">
+                <input class="form__item-input" type="text" name="popup-user-name" id="popup-name" placeholder="Имя, фамилия" value="Константин Сыромятнков">
+              </li>
+              <li class="form__item form__item--phone">
+                <input class="form__item-input" type="tel" name="phone" id="phone" placeholder="+7(___) ___ __ __">
+              </li>
+            </ul>
+              <p class="form__label">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="agree" id="agree">
+                <label class="form__item-label" for="agree">
+                  Я согласен с
+                  <a class="form__item-link" href="#">политикой конфиденциальности</a>
+                  и даю согласие на обработку персональных данных
+                </label>
+              </p>
+            
+            <button class="form__button" type="submit">Отправить заявку</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </header>
+  <script src="js/header-open.js"></script>
+</body>
+</html>
