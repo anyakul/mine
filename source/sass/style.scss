@@ -1,0 +1,19 @@
+@import "variables.scss";
+@import "fonts.scss";
+@import "scaffolding.scss";
+@import "mixins.scss";
+
+
+// header
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/login.scss";
+@import "blocks/promo.scss";
+
+
+//main
+@import "blocks/quality.scss";
+@import "blocks/services.scss";
+@import "blocks/worker.scss";
+@import "blocks/portfolio.scss";
+@import "blocks/team.scss";

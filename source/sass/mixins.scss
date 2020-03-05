@@ -1,0 +1,86 @@
+@mixin page-width {
+  width: 99%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin flex-row-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin cancel-list {
+  list-style: none;
+}
+
+@mixin button {
+  color: $white-color;
+  font-size: 17px;
+  line-height: 40px;
+  font-family: $karla-bold;
+  border-radius: 30px;
+}
+
+@mixin section-span {
+  font-size: 18px;
+  line-height: 20px;
+  color: $section-span-color;
+  font-family: $karla-bold;
+}
+
+@mixin section-header {
+  font-size: 45px;
+  line-height: 55px;
+  color: rgb(1, 12, 57);
+  font-family: $worksans-regular;
+}
+
+@mixin section-text {
+  font-size: 17px;
+  line-height: 26px;
+  color: rgb(120, 120, 120);
+  font-family: $karla-regular;
+}
+
+@mixin white-link {
+  text-decoration: none;
+  color: $white-color;
+  font-size: 17px;
+  font-family: $karla-bold;
+}
+
+@mixin toggle {
+  background-color: transparent;
+  border: none;
+  width: 49px;
+  height: 49px;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin item-header {
+  font-family: $worksans-Bold;
+  font-size: 23px;
+  letter-spacing: 0.7px;
+  color: $dark-blue-bg-color;
+  font-weight: bold;
+}
+
+@mixin item-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: $black-color;
+  font-family: $karla-regular;
+}

@@ -1,0 +1,30 @@
+.header {
+  background-image: url("../img/background-header.png");
+  background-color: $light-purple-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 119px;
+}
+
+.header__wrapper {
+  padding-top: 28px;
+}
+
+.header__toggle {
+  display: none;
+}
+
+.header__row {
+  @include flex-row;
+  @include page-width;
+  margin-bottom: 66px;
+}
+
+.header__logo-menu {
+  @include flex-row;
+  width: 50%;
+}
+
+.header__logo {
+  margin-right: -20%;
+}

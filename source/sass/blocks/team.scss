@@ -1,0 +1,29 @@
+.team {
+  background-color: $light-blue-color;
+  background-image: url("../img/background-team.png");
+  padding-top: 90px;
+}
+
+.team__wrapper {
+  @include page-width;
+  text-align: center;
+}
+
+.team__span {
+  @include section-span;
+  margin-bottom: 30px;
+}
+
+.team__header {
+  @include section-header;
+  margin-bottom: 30px;
+}
+
+.team__icon {
+  margin-bottom: 30px;
+}
+
+.team__list {
+  @include cancel-list;
+  @include flex-row;
+}

@@ -1,0 +1,106 @@
+.services {
+  background-color: $light-blue-bg-color;
+  padding-top: 55px;
+  padding-bottom: 118px;
+}
+
+.services__wrapper {
+  @include page-width;
+  text-align: center;
+}
+
+.services__span {
+  @include section-span;
+  margin-bottom: 25px;
+}
+
+.services__header {
+  @include section-header;
+  margin-bottom: 30px;
+  letter-spacing: 0.9px;
+}
+
+.services__icon {
+  margin-bottom: 80px;
+}
+
+.services__list {
+  @include cancel-list;
+  @include flex-row;
+  margin-bottom: 53px;
+}
+
+.services__item {
+  width: 17%;
+  background-color: $white-color;
+  background-image: url("../img/background-service-item.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  position: relative;
+  padding-top: 162px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 40px;
+  text-align: left;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 47px;
+    left: 16%;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    background: $double-purple-bg;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 23%;
+    width: 35px;
+    height: 35px;
+    z-index: 20;
+  }
+
+  &--digital-marketing::after {
+    background-image: url("../img/icon-digital-marketing.svg");
+  }
+
+  &--web-analysis::after {
+    background-image: url("../img/icon-web-analysis.svg");
+  }
+
+  &--market-analysis::after {
+    background-image: url("../img/icon-market-analysis.svg");
+  }
+
+  &--brand-identity::after {
+    background-image: url("../img/icon-brand-identity.svg");
+  }
+}
+
+.services__item-header {
+  @include item-header;
+  margin-bottom: 22px;
+}
+
+.services__item-text {
+  @include item-text;
+  line-height: 26px;
+  margin-bottom: 29px;
+}
+
+.services__item-link {
+  font-family: $karla-bold;
+  color: $dark-blue-bg-color;
+}
+
+.services__button {
+  @include button;
+  background: $double-purple-bg;
+  padding: 20px 40px;
+}

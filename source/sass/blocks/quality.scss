@@ -1,0 +1,89 @@
+.quality {
+  background-image: url("../img/background-quality.png");
+  background-repeat: no-repeat;
+  background-position: 42% -20px;
+  margin-bottom: 168px;
+  background-size: 65% 113%;
+}
+
+.quality__wrapper {
+  @include page-width;
+}
+
+.quality__column {
+  margin-left: 60%;
+  padding-top: 66px;
+  width: 40%;
+}
+
+.quality__span {
+  @include section-span;
+  margin-bottom: 16px;
+}
+
+.quality__header {
+  @include section-header;
+  letter-spacing: 0.8px;
+  margin-bottom: 25px;
+}
+
+.quality__text {
+  @include section-text;
+  letter-spacing: 0.3px;
+  margin-bottom: 48px;
+}
+
+.quality__icon {
+  margin-bottom: 20px;
+}
+
+.quality__list {
+  @include cancel-list;
+  @include flex-row-left;
+}
+
+.quality__item {
+  margin-bottom: 20px;
+  margin-right: 33px;
+  background-color: $light-blue-color;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 25px;
+  padding-top: 80px;
+  text-align: center;
+  position: relative;
+  width: 30%;
+  height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: calc(20% + 24px);
+    width: 48px;
+    height: 45px;
+    background-repeat: no-repeat;
+  }
+
+  &--customers::before {
+    background-image: url("../img/icon-customers.svg");
+  }
+
+  &--works::before {
+    background-image: url("../img/icon-works.svg");
+  }
+}
+
+.quality__item-number {
+  font-size: 38px;
+  line-height: 30px;
+  color: $section-span-color;
+  font-family: $worksans-Bold;
+  margin-bottom: 10px;
+  letter-spacing: 2.5px;
+}
+
+.quality__item-text {
+  @include item-text;
+  letter-spacing: 1.06px;
+}

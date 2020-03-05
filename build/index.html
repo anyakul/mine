@@ -6,27 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Suka</title>
   <link rel="stylesheet" href="css/style.min.css">
- <!-- <style>
+  <!--<style>
     HTML {
     opacity: 0.5;
       background-repeat: no-repeat;
       background-position:  50% 0;
-      background-image: url( "img/snowalp-desktop.jpg" );
-     // position: absolute;
-   z-index: 10;
-   
-    }
-    /* Tablet */
-    @media ( max-width: 1023px ) {
-      HTML {
-        background-image: url( "img/snowalp-tablet.jpg" );
-      }
-    }
-    /* mobile */
-    @media ( max-width: 767px ) {
-      HTML {
-        background-image: url( "img/snowalp-mobile.jpg" );
-      }
+      background-image: url( "img/home_01.jpg" );
+      z-index: 10;
     }
   </style>-->
 </head>
@@ -38,121 +24,152 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <h1 class="visually-hidden">Лого и меню</h1>
-        <div class="header__logo logo">
-          <a class="logo__link">
-            <img class="logo__icon" src="img/logo.svg" alt="suka">
-          </a>
-        </div>
-        <ul class="header__menu menu">
-          <li class="menu__item"><a class="menu__link">Home</a></li>
-          <li class="menu__item"><a class="menu__link">Services</a></li>
-          <li class="menu__item"><a class="menu__link">Portfolio</a></li>
-          <li class="menu__item"><a class="menu__link">Pages</a></li>
-          <li class="menu__item"><a class="menu__link">Contact</a></li>
-        </ul>
-        <div class="header__login login">
-          <select class="login__language-select">
-            <option>Eng</option>
-            <option>Rus</option>
-          </select>
-          <a class="login__avatar"><img class="login__icon" src="img/icon-login.svg" alt="login"></a>
+          <div class="header__logo logo">
+            <a class="logo__link">
+              <img class="logo__icon" width="116" height="51" src="img/icon-logo.svg" alt="suka">
+            </a>
+          </div>
+          <ul class="header__menu menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Portfolio</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+          </ul>
+          <div class="header__login login">
+            <select class="login__language-select">
+              <option>Eng</option>
+              <option>Rus</option>
+            </select>
+            <a class="login__avatar"><img class="login__icon" src="img/icon-login.svg" alt="login"></a>
         </div>
       </section>
       <section class="promo">
-        <h2 class="promo__header">Take control of your business success.</h2>
-        <p class="promo__text">Get connected</p>
-        <p class="promo__text">We are design agency united in keeping creative design and mark</p>
-        <button class="promo__button-services" type="submit">Services here</button>
-        <button class="promo__button-discover" type="submit">Discover more</button>
-        <button class="promo__button-toggle" type="submit"><span class="visually-hidden">Next</span></button>
-        <button class="promo__button-toggle" type="submit"><span class="visually-hidden">Previous</span></button>
+        <div class="promo__wrapper">
+          <h2 class="promo__header">Take control<br> of your business success.</h2>
+          <p class="promo__text">Get connected</p>
+          <p class="promo__text-main">We are design agency united in keeping creative design and marketing a straight forward affaire.</p>
+          <div class="promo__buttons">
+            <button class="promo__button-services">Services here</button>
+            <button class="promo__button-discover">Discover more</button>
+          </div>
+          <div class="promo__buttons-toggles">
+            <button class="promo__button-toggle promo__button-toggle--left"><span class="visually-hidden">Next</span></button>
+            <button class="promo__button-toggle promo__button-toggle--right"><span class="visually-hidden">Previous</span></button>
+          </div>
+        </div>
       </section>
     </div>
   </header>
   <main class="main">
     <section class="quality">
       <div class="quality__wrapper">
-        <p class="quality__span">Quality is the best</p>
-        <h1 class="quality__header">Take a new look in Your website today.</h1>
-        <p class="quality__text">Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-        <ul class="quality__list">
-          <li class="quality__item">
-            <p class="quality__item-number">5364</p>
-            <p class="quality__item-text">Happy Customers</p>
-          </li>
-          <li class="quality__item">
-            <p class="quality__item-number">2387</p>
-            <p class="quality__item-text">Finish works</p>
-          </li>
-        </ul>
+        <div class="quality__column">
+          <p class="quality__span">Quality is the best</p>
+          <h1 class="quality__header">Take a new look in Your website today.</h1>
+          <img class="quality__icon" src="img/icon-wave-line.svg" alt="login">
+          <p class="quality__text">Duis aute irure dolor in reprehenderit in voluptate velit esse dolore eu fugist nulla pariatur.
+          Excepteur sint occaecat cupida incididunt ut labore et dolore magna.</p>
+          <ul class="quality__list">
+            <li class="quality__item quality__item--customers">
+              <p class="quality__item-number">5364</p>
+              <p class="quality__item-text">Happy Customer</p>
+            </li>
+            <li class="quality__item quality__item--works">
+              <p class="quality__item-number">2387</p>
+              <p class="quality__item-text">Finish works</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="services">
       <div class="services__wrapper">
         <p class="services__span">Services</p>
-        <h1 class="services__header">What we do?</h1>
+        <h1 class="services__header">What We Do?</h1>
+        <img class="services__icon" src="img/icon-wave-line.svg" alt="login">
         <ul class="services__list">
-          <li class="services__item">
-            <p class="services__item-header">Digital marketing</p>
-            <p class="services__item-text">Volupta esse cllum doloe  nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
-            <a class="services__item-link">Read more</a>
+          <li class="services__item services__item--digital-marketing">
+              <p class="services__item-header">Digital marketing</p>
+              <p class="services__item-text">Volupta esse cllum doloe  nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
+              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
           </li>
-          <li class="services__item">
-            <p class="services__item-header">Web Analysis</p>
-            <p class="services__item-text">Volupta esse cllum doloe  nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
-            <a class="services__item-link">Read more</a>
+          <li class="services__item services__item--web-analysis">
+            <div class="services__item-wrapper ">
+              <p class="services__item-header">Web Analysis</p>
+              <p class="services__item-text">Volupta esse cllum doloe nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
+              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+            </div>
           </li>
-          <li class="services__item">
-            <p class="services__item-header">Market Analysis</p>
-            <p class="services__item-text">Volupta esse cllum doloe  nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
-            <a class="services__item-link">Read more</a>
+          <li class="services__item services__item--market-analysis">
+            <div class="services__item-wrapper">
+              <p class="services__item-header">Market Analysis</p>
+              <p class="services__item-text">Volupta esse cllum doloe nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
+              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+            </div>
           </li>
-          <li class="services__item">
-            <p class="services__item-header">Brend Identity</p>
-            <p class="services__item-text">Volupta esse cllum doloe  nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
-            <a class="services__item-link">Read more</a>
+          <li class="services__item services__item--brand-identity">
+            <div class="services__item-wrapper">
+              <p class="services__item-header">Brand Identity</p>
+              <p class="services__item-text">Volupta esse cllum doloe nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
+              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+            </div>
           </li>
         </ul>
-        <a class="services__link">Other Services</a>
+        <a class="services__button">Other Services</a>
       </div>
     </section>
     <section class="worker">
       <div class="worker__wrapper">
-        <h1 class="worker__header">Designed to help your team collaborate every thing better.</h1>
-        <a class="worker__link">Contact today</a>
+        <img class="worker__image" src="img/worker-image.png" alt="login">
+        <div class="worker__text">
+          <h1 class="worker__header">Designed to<br> help your team collaborate every thing better.</h1>
+          <a class="worker__link">Contact today</a>
+        </div>
       </div>
     </section>
     <section class="portfolio">
-      <div class="portfolio__wrapper">
-        <p class="portfolio__span">Our Portfolio</p>
-        <h1 class="portfolio__header">Some work for our honorable clients.</h1>
+      <div class="portfolio__row">
+        <div class="portfolio__text">
+          <p class="portfolio__span">Our Portfolio</p>
+          <h1 class="portfolio__header">Some work for our honorable clients.</h1>
+        </div>
+        <div class="portfolio__buttons-toggles">
+            <button class="portfolio__button-toggle portfolio__button-toggle--left"><span class="visually-hidden">Next</span></button>
+            <button class="portfolio__button-toggle portfolio__button-toggle--right"><span class="visually-hidden">Previous</span></button>
+          </div>
         <ul class="portfolio__list">
           <li class="portfolio__item">
-            <p class="portfolio__item-span">Digital marketing</p>
-            <p class="portfolio__item-header">Market Analysis</p>
-            <p class="portfolio__item-text">Volupta esse cllum doloe nulla pariat officia deserunt.</p>
-            <img class="portfolio__image" src="img/icon-login.svg" alt="login">
+            <div class="portfolio__item-wrapper">
+              <p class="portfolio__item-span">Digital marketing</p>
+              <p class="portfolio__item-header">Market Analysis</p>
+              <p class="portfolio__item-text">Volupta esse cllum doloe nulla pariat officia deserunt.</p>
+              <img class="portfolio__image" src="img/market-analysis.png" width="100%" height="304" alt="login">
+            </div>
           </li>
           <li class="portfolio__item">
-            <p class="portfolio__item-span">Digital marketing</p>
-            <p class="portfolio__item-header">Brend Identity</p>
-            <p class="portfolio__item-text">Volupta esse cllum doloe nulla pariat officia deserunt.</p>
-            <img class="portfolio__image" src="img/icon-login.svg" alt="login">
+            <div class="portfolio__item-wrapper">
+              <p class="portfolio__item-span">Digital marketing</p>
+              <p class="portfolio__item-header">Brend Identity</p>
+              <p class="portfolio__item-text">Volupta esse cllum doloe nulla pariat officia deserunt.</p>
+              <img class="portfolio__image" src="img/brand-identity.png" width="100%" height="304" alt="login">
+            </div>
           </li>
           <li class="portfolio__item">
-            <p class="portfolio__item-span">Digital marketing</p>
-            <p class="portfolio__item-header">Web Development</p>
-            <p class="portfolio__item-text">Volupta esse cllum doloe nulla pariat officia deserunt.</p>
-            <img class="portfolio__image" src="img/icon-login.svg" alt="login">
+            <div class="portfolio__item-wrapper">
+              <p class="portfolio__item-span">Digital marketing</p>
+              <p class="portfolio__item-header">Web Development</p>
+              <p class="portfolio__item-text">Volupta esse cllum doloe nulla pariat officia deserunt.</p>
+              <img class="portfolio__image" src="img/web-development.png" width="100%" height="304" alt="login">
+            </div>
           </li>
         </ul>
-        <a class="services__link">Other Services</a>
-      </div>
-    </section>
+    </div></section>
     <section class="team">
       <div class="team__wrapper">
         <p class="team__span">Team Members</p>
         <h1 class="team__header">Meet our team</h1>
+        <img class="team__icon" src="img/icon-wave-line.svg" alt="login">
         <ul class="team__list">
           <li class="team__item">
             <img class="team__image" src="img/icon-login.svg" alt="login">
@@ -175,7 +192,6 @@
             <p class="team__item-text">Product Manager</p>
           </li>
         </ul>
-        <a class="services__link">Other Services</a>
       </div>
     </section>
     <section class="opinion">
@@ -306,7 +322,7 @@
       </form>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <section class="company">
       <h2 class="visually-hidden">Companies</h2>
       <ul class="company__list">

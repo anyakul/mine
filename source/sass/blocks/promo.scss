@@ -1,0 +1,70 @@
+.promo {
+  padding-bottom: 55px;
+  background-image: url("../img/background-promo.png");
+  background-position: left calc(50% + 325px) top 0;
+  background-repeat: no-repeat;
+  background-size: 894px 684px;
+  padding-top: 37px;
+}
+
+.promo__wrapper {
+  @include page-width;
+}
+
+.promo__header {
+  font-size: 62px;
+  color: $white-color;
+  line-height: 62px;
+  width: 50%;
+  font-family: $worksans-Bold;
+  margin-bottom: 13px;
+  padding-top: 35px;
+}
+
+.promo__text {
+  font-family: $worksans-regular;
+  font-size: 44px;
+  line-height: 50px;
+  color: $white-color;
+  margin-bottom: 20px;
+}
+
+.promo__text-main {
+  font-family: $karla-regular;
+  font-size: 17px;
+  line-height: 30px;
+  color: $white-color;
+  width: 38%;
+  margin-bottom: 30px;
+}
+
+.promo__buttons {
+  margin-bottom: 150px;
+}
+
+.promo__button-services {
+  @include button;
+  background: $double-green-color;
+  border: none;
+  padding: 10px 45px;
+  margin-right: 20px;
+}
+
+.promo__button-discover {
+  @include button;
+  background-color: transparent;
+  border: 1px solid $white-color;
+  padding: 7px 40px;
+}
+
+.promo__button-toggle {
+  @include toggle;
+}
+
+.promo__button-toggle--left {
+  background-image: url("../img/icon-toggle-left.svg");
+}
+
+.promo__button-toggle--right {
+  background-image: url("../img/icon-toggle-right.svg");
+}

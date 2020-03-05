@@ -1,0 +1,41 @@
+.worker {
+  background: linear-gradient(145deg, #e663f9, #8930dd);
+  background-image: url("../img/background-worker.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 120px;
+  vertical-align: top;
+}
+
+.worker__wrapper {
+  @include page-width;
+  @include flex-row;
+  padding-top: 80px;
+  align-items: top;
+  min-height: 80%;
+}
+
+.worker__header {
+  @include section-header;
+  color: $white-color;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+
+.worker__image {
+  width: 670px;
+  height: 545px;
+  padding-top: 45px;
+  border-radius: 27px;
+}
+
+.worker__text {
+  width: 34%;
+  margin-top: 38px;
+}
+
+.worker__link {
+  @include button;
+  background: linear-gradient(45deg, #2bb6c2, #6ad3aa);
+  padding: 20px 40px;
+}
