@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Suka</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <!--<style>
+    HTML {
+    opacity: 0.5;
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      background-image: url( "img/home_01.jpg" );
+      z-index: 10;
+    }
+  </style>-->
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <section class="header__row">
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <h1 class="visually-hidden">Лого и меню</h1>
+          <div class="header__logo logo">
+            <a class="logo__link">
+              <img class="logo__icon" width="116" height="51" src="img/icon-logo.svg" alt="suka">
+            </a>
+          </div>
+          <ul class="header__menu menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Portfolio</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+          </ul>
+          <div class="header__login login">
+            <select class="login__language-select">
+              <option>Eng</option>
+              <option>Rus</option>
+            </select>
+            <a class="login__avatar"><img class="login__icon" src="img/icon-login.svg" alt="login"></a>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="promo__header">Take control<br> of your business success.</h2>
+          <p class="promo__text">Get connected</p>
+          <p class="promo__text-main">We are design agency united in keeping creative design and marketing a straight forward affaire.</p>
+          <div class="promo__buttons">
+            <button class="promo__button-services">Services here</button>
+            <button class="promo__button-discover">Discover more</button>
+          </div>
+          <div class="promo__buttons-toggles">
+            <button class="promo__button-toggle promo__button-toggle--left"><span class="visually-hidden">Next</span></button>
+            <button class="promo__button-toggle promo__button-toggle--right"><span class="visually-hidden">Previous</span></button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+  <main class="main">
+    <section class="quality">
+      <div class="quality__wrapper">
+        <div class="quality__column">
+          <p class="quality__span">Quality is the best</p>
+          <h1 class="quality__header">Take a new look in Your website today.</h1>
+          <img class="quality__icon" src="img/icon-wave-line.svg" alt="login">
+          <p class="quality__text">Duis aute irure dolor in reprehenderit in voluptate velit esse dolore eu fugist nulla pariatur.
+          Excepteur sint occaecat cupida incididunt ut labore et dolore magna.</p>
+          <ul class="quality__list">
+            <li class="quality__item quality__item--customers">
+              <p class="quality__item-number">5364</p>
+              <p class="quality__item-text">Happy Customer</p>
+            </li>
+            <li class="quality__item quality__item--works">
+              <p class="quality__item-number">2387</p>
+              <p class="quality__item-text">Finish works</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__wrapper">
+        <p class="services__span">Services</p>
+        <h1 class="services__header">What We Do?</h1>
+        <img class="services__icon" src="img/icon-wave-line.svg" alt="login">
+        <ul class="services__list">
+          <li class="services__item services__item--digital-marketing">
+              <p class="services__item-header">Digital marketing</p>
+              <p class="services__item-text">Volupta esse cllum doloe  nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
+              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+          </li>
+          <li class="services__item services__item--web-analysis">
+            <div class="services__item-wrapper ">
+              <p class="services__item-header">Web Analysis</p>
+              <p class="services__item-text">Volupta esse cllum doloe nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
+              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+            </div>
+          </li>
+          <li class="services__item services__item--market-analysis">
+            <div class="services__item-wrapper">
+              <p class="services__item-header">Market Analysis</p>
+              <p class="services__item-text">Volupta esse cllum doloe nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
+              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+            </div>
+          </li>
+          <li class="services__item services__item--brand-identity">
+            <div class="services__item-wrapper">
+              <p class="services__item-header">Brand Identity</p>
+              <p class="services__item-text">Volupta esse cllum doloe nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
+              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+            </div>
+          </li>
+        </ul>
+        <a class="services__button">Other Services</a>
+      </div>
+    </section>
+    <section class="worker">
+      <div class="worker__wrapper">
+        <img class="worker__image" src="img/worker-image.png" alt="login">
+        <div class="worker__text">
+          <h1 class="worker__header">Designed to<br> help your team collaborate every thing better.</h1>
+          <a class="worker__link">Contact today</a>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="portfolio__row">
+        <div class="portfolio__text">
+          <p class="portfolio__span">Our Portfolio</p>
+          <h1 class="portfolio__header">Some work for our honorable clients.</h1>
+        </div>
+        <div class="portfolio__buttons-toggles">
+            <button class="portfolio__button-toggle portfolio__button-toggle--left"><span class="visually-hidden">Next</span></button>
+            <button class="portfolio__button-toggle portfolio__button-toggle--right"><span class="visually-hidden">Previous</span></button>
+          </div>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <div class="portfolio__item-wrapper">
+              <p class="portfolio__item-span">Digital marketing</p>
+              <p class="portfolio__item-header">Market Analysis</p>
+              <p class="portfolio__item-text">Volupta esse cllum doloe nulla pariat officia deserunt.</p>
+              <img class="portfolio__image" src="img/market-analysis.png" width="100%" height="304" alt="login">
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <div class="portfolio__item-wrapper">
+              <p class="portfolio__item-span">Digital marketing</p>
+              <p class="portfolio__item-header">Brend Identity</p>
+              <p class="portfolio__item-text">Volupta esse cllum doloe nulla pariat officia deserunt.</p>
+              <img class="portfolio__image" src="img/brand-identity.png" width="100%" height="304" alt="login">
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <div class="portfolio__item-wrapper">
+              <p class="portfolio__item-span">Digital marketing</p>
+              <p class="portfolio__item-header">Web Development</p>
+              <p class="portfolio__item-text">Volupta esse cllum doloe nulla pariat officia deserunt.</p>
+              <img class="portfolio__image" src="img/web-development.png" width="100%" height="304" alt="login">
+            </div>
+          </li>
+        </ul>
+    </div></section>
+    <section class="team">
+      <div class="team__wrapper">
+        <p class="team__span">Team Members</p>
+        <h1 class="team__header">Meet our team</h1>
+        <img class="team__icon" src="img/icon-wave-line.svg" alt="login">
+        <ul class="team__list">
+          <li class="team__item">
+            <img class="team__image" src="img/icon-login.svg" alt="login">
+            <p class="team__item-header">Lindsay Andrews</p>
+            <p class="team__item-text">Product Manager</p>
+          </li>
+          <li class="team__item">
+            <img class="team__image" src="img/icon-login.svg" alt="login">
+            <p class="team__item-header">Gene Richardson</p>
+            <p class="team__item-text">Product Manager</p>
+          </li>
+          <li class="team__item">
+            <img class="team__image" src="img/icon-login.svg" alt="login">
+            <p class="team__item-header">Blanca Roberts</p>
+            <p class="team__item-text">Product Manager</p>
+          </li>
+          <li class="team__item">
+            <img class="team__image" src="img/icon-login.svg" alt="login">
+            <p class="team__item-header">Kristine Carpenter</p>
+            <p class="team__item-text">Product Manager</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="opinion">
+      <div class="opinion__wrapper">
+        <p class="opinion__header">We are creative agency, what our clients say about us!</p>
+        <h1 class="opinion__header">Meet our team</h1>
+        <button class="opinion__button-toggle" type="submit"><span class="visually-hidden">Next</span></button>
+        <button class="opinion__button-toggle" type="submit"><span class="visually-hidden">Previous</span></button>
+        <ul class="opinion__list">
+          <li class="opinion__item">
+            <img class="opinion__image" src="img/icon-login.svg" alt="login">
+            <p class="opinion__item-header">Ut enim ad minim venia quis nostrud ex ea commodo consequat dolor reore enderit in voluptate velit esse dolore nulla partiatur sint</p>
+            <p class="opinion__item-text">Madeline Adams</p>
+            <p class="opinion__item-span">UI/UX Designer</p>
+          </li>
+          <li class="opinion__item">
+            <img class="opinion__image" src="img/icon-login.svg" alt="login">
+            <p class="opinion__item-header">Ut enim ad minim venia quis nostrud ex ea commodo consequat dolor reore enderit in voluptate velit esse dolore nulla partiatur sint</p>
+            <p class="opinion__item-text">Madeline Adams</p>
+            <p class="opinion__item-span">UI/UX Designer</p>
+          </li>
+        </ul>
+        <a class="services__link">Other Services</a>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="faq__wrapper">
+        <p class="faq__span">faq</p>
+        <h1 class="faq__header">Frequently Asekd Question</h1>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <p class="faq__item-header">01. How much does it cost?</p>
+            <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__item-header">01. How much does it cost?</p>
+            <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__item-header">01. How much does it cost?</p>
+            <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__item-header">01. How much does it cost?</p>
+            <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__item-header">01. How much does it cost?</p>
+            <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog__wrapper">
+        <p class="blog__span">faq</p>
+        <h1 class="blog__header">Frequently Asekd Question</h1>
+        <ul class="blog__list">
+          <li class="blog__item">
+            <img class="blog__image" src="img/icon-login.svg" alt="login">
+            <p class="blog__item-header">Right at the coast of their large language ocean.</p>
+            <p class="blog__item-author">Aribend Meirenson</p>
+            <p class="blog__item-date">05.10.2019</p>
+            <a class="blog__item-link">Read more</a>
+          </li>
+          <li class="blog__item">
+            <img class="blog__image" src="img/icon-login.svg" alt="login">
+            <p class="blog__item-header">Right at the coast of their large language ocean.</p>
+            <p class="blog__item-author">Aribend Meirenson</p>
+            <p class="blog__item-date">05.10.2019</p>
+            <a class="blog__item-link">Read more</a>
+          </li>
+          <li class="blog__item">
+            <img class="blog__image" src="img/icon-login.svg" alt="login">
+            <p class="blog__item-header">Right at the coast of their large language ocean.</p>
+            <p class="blog__item-author">Aribend Meirenson</p>
+            <p class="blog__item-date">05.10.2019</p>
+            <a class="blog__item-link">Read more</a>
+          </li>
+          <li class="blog__item">
+            <img class="blog__image" src="img/icon-login.svg" alt="login">
+            <p class="blog__item-header">Right at the coast of their large language ocean.</p>
+            <p class="blog__item-author">Aribend Meirenson</p>
+            <p class="blog__item-date">05.10.2019</p>
+            <a class="blog__item-link">Read more</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h1 class="contacts__header">Contact Us</h1>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__item-header">Phone</p>
+            <p class="contacts__item-author">+0092 796 568 124</p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__item-header">Email</p>
+            <p class="contacts__item-author">support24@gmail.com</p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__item-header">Address</p>
+            <p class="contacts__item-author">839 Plymouth Rd. Tampa, FL 33604</p>
+          </li>
+        </ul>
+      </div>
+      <form class="form" method="POST" action="#">
+        <h1 class="contacts__header">Contact Us</h1>
+        <ul class="form__list">
+          <li class="form__item form__item--name">
+            <input class="form__item-input" type="text" name="name" id="name" placeholder="name:">
+          </li>
+          <li class="form__item form__item--phone">
+            <input class="form__item-input" type="tel" name="email" id="email" placeholder="Email">
+          </li>
+          <li class="form__item form__item--name">
+            <input class="form__item-input" type="text" name="subject" id="subject" placeholder="Subject:">
+          </li>
+          <li class="form__item form__item--phone">
+            <input class="form__item-input" type="tel" name="phone" id="phone" placeholder="Phone:">
+          </li>
+          <li class="form__item form__item--name">
+            <textarea class="form__item-input" type="text" name="message" id="message">Message</textarea>
+          </li>
+        </ul>
+        <button class="form__button" type="submit">Contact today</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="company">
+      <h2 class="visually-hidden">Companies</h2>
+      <ul class="company__list">
+        <li class="company__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
+        <li class="contacts__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
+        <li class="contacts__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
+        <li class="company__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
+        <li class="contacts__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
+        <li class="contacts__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
+      </ul>
+    </section>
+    <section class="footer__list">
+      <div class="join">
+        <h2 class="join__header">Join with the entrepreneur community for business.</h2>
+        <form class="join__form" method="POST" action="#">
+          <input class="join__form-input" type="text" name="name" id="name" placeholder="suka24@gmail.com">
+          <button class="join__form-button" type="submit">Join Now</button>
+        </form>
+      </div>
+      <div class="support">
+        <h2 class="support__header">Support</h2>
+        <ul class="support__list">
+          <li class="support__item"><a class="support__link" href="#">Faq</a></li>
+          <li class="support__item"><a class="support__link" href="#">Contact us</a></li>
+          <li class="support__item"><a class="support__link" href="#">Outlook plugins</a></li>
+          <li class="support__item"><a class="support__link" href="#">Live chatting</a></li>
+        </ul>
+      </div>
+      <div class="about-us">
+        <h2 class="about-us__header">Support</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item"><a class="about-us__link" href="#">About us</a></li>
+          <li class="about-us__item"><a class="about-us__link" href="#">Features items</a></li>
+          <li class="about-us__item"><a class="about-us__link" href="#">Live Streaming</a></li>
+          <li class="about-us__item"><a class="about-us__link" href="#">Privacy & Policy</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <h2 class="social__header">Support</h2>
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link" href="#">facebook</a></li>
+          <li class="social__item"><a class="social__link" href="#">Twitter</a></li>
+          <li class="social__item"><a class="social__link" href="#">Google</a></li>
+          <li class="social__item"><a class="social__link" href="#">Skype</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="footer__copyright copyright">
+      <ul class="copyright__list">
+        <li class="copyright__item"><a class="support__link" href="#">Copyright’2019. All Rights Reserved</a></li>
+        <li class="copyright__item"><a class="support__link" href="#">452 Center Dr. Littleton, CO 80123</a></li>
+        <li class="copyright__item"><a class="support__link" href="#"><img class="logo__icon" src="img/logo.svg" alt="suka"></a></li>
+      </ul>
+    </section>
+  </footer>
+</body>
+</html>
