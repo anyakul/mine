@@ -1,15 +1,26 @@
+@mixin background-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin section {
+  padding: 100px 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 40px 0;
+  }
+}
+
 @mixin page-width {
-  width: 99%;
-  max-width: 1170px;
+  width: 90%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 @mixin flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 @mixin flex-row-left {
@@ -37,6 +48,12 @@
   line-height: 20px;
   color: $section-span-color;
   font-family: $karla-bold;
+  margin-bottom: 20px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 @mixin section-header {
@@ -44,6 +61,19 @@
   line-height: 55px;
   color: rgb(1, 12, 57);
   font-family: $worksans-regular;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 26px;
+    line-height: 28px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @mixin section-text {
@@ -51,6 +81,32 @@
   line-height: 26px;
   color: rgb(120, 120, 120);
   font-family: $karla-regular;
+  margin-bottom: 50px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@mixin section-list {
+  @include cancel-list;
+  @include flex-row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: scroll;
+  margin-bottom: 40px;
+}
+
+@mixin section-item {
+  @media (max-width: $tablet-width) {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 @mixin white-link {
@@ -76,6 +132,10 @@
   letter-spacing: 0.7px;
   color: $dark-blue-bg-color;
   font-weight: bold;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 @mixin item-text {
@@ -83,4 +143,8 @@
   line-height: 26px;
   color: $black-color;
   font-family: $karla-regular;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+  }
 }

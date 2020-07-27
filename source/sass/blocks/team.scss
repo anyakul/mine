@@ -1,7 +1,8 @@
 .team {
+  @include background-section;
+  @include section;
   background-color: $light-blue-color;
   background-image: url("../img/background-team.png");
-  padding-top: 90px;
 }
 
 .team__wrapper {
@@ -11,12 +12,10 @@
 
 .team__span {
   @include section-span;
-  margin-bottom: 30px;
 }
 
 .team__header {
   @include section-header;
-  margin-bottom: 30px;
 }
 
 .team__icon {
@@ -24,6 +23,69 @@
 }
 
 .team__list {
+  @include section-list;
+}
+
+.team__item {
+  @include section-item;
+  width: 22%;
+  border-radius: 50px;
+}
+
+.team__image {
+  width: 100%;
+  height: 300px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 30;
+}
+
+.team__item-wrapper {
+  background-color: $white-color;
+  width: 100%;
+  height: 40px;
+  border-radius: 0 0 50px 50px;
+  margin-top: -28px;
+  position: relative;
+  z-index: 20;
+}
+
+.team__item-header-profession {
+  background-color: $dark-blue-color;
+  color: $white-color;
+  padding: 133px 10px 30px;
+  border-radius: 0 0 50px 50px;
+  margin-top: -90px;
+  position: relative;
+  z-index: 10;
+  background-image: url("../img/background-team-item.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 80px;
+}
+
+.team__item-header {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.team__item-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.team__item-social-list {
   @include cancel-list;
   @include flex-row;
+  justify-content: center;
+}
+
+
+.team__item-social-item {
+  width: 40px;
+  height: 40px;
+
+  svg {
+    color: $white-color;
+  }
 }

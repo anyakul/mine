@@ -1,7 +1,8 @@
 .services {
+  @include background-section;
+  @include section;
   background-color: $light-blue-bg-color;
-  padding-top: 55px;
-  padding-bottom: 118px;
+  background-image: url("../img/background-services.png");
 }
 
 .services__wrapper {
@@ -11,38 +12,40 @@
 
 .services__span {
   @include section-span;
-  margin-bottom: 25px;
 }
 
 .services__header {
   @include section-header;
-  margin-bottom: 30px;
-  letter-spacing: 0.9px;
 }
 
 .services__icon {
   margin-bottom: 80px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .services__list {
-  @include cancel-list;
-  @include flex-row;
-  margin-bottom: 53px;
+  @include section-list;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+    overflow: scroll;
+  }
 }
 
 .services__item {
-  width: 17%;
+  @include section-item;
+  width: 24%;
   background-color: $white-color;
   background-image: url("../img/background-service-item.svg");
   background-repeat: no-repeat;
   background-position: 100% 0;
   position: relative;
-  padding-top: 162px;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 40px;
   text-align: left;
   margin-bottom: 20px;
+  margin-right: 10px;
 
   &::before {
     content: "";
@@ -54,16 +57,24 @@
     border-radius: 10px;
     background: $double-purple-bg;
     background-repeat: no-repeat;
+
+    @media (max-width: $tablet-width) {
+      left: 3%;
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
     top: 65px;
-    left: 23%;
+    left: 65px;
     width: 35px;
     height: 35px;
     z-index: 20;
+
+    @media (max-width: $tablet-width) {
+      left: 35px;
+    }
   }
 
   &--digital-marketing::after {
@@ -83,6 +94,18 @@
   }
 }
 
+.services__item-wrapper {
+  padding-top: 162px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 65px;
+    padding-left: 110px;
+  }
+}
+
 .services__item-header {
   @include item-header;
   margin-bottom: 22px;
@@ -91,16 +114,29 @@
 .services__item-text {
   @include item-text;
   line-height: 26px;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
+}
+
+.blog__item-author {
+  margin-bottom: 10px;
 }
 
 .services__item-link {
   font-family: $karla-bold;
   color: $dark-blue-bg-color;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .services__button {
   @include button;
   background: $double-purple-bg;
   padding: 20px 40px;
+
+  @media (max-width: $mobile-width) {
+    @include page-width;
+    display: block;
+  }
 }

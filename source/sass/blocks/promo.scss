@@ -5,6 +5,15 @@
   background-repeat: no-repeat;
   background-size: 894px 684px;
   padding-top: 37px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+    background-size: 400px 400px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: none;
+  }
 }
 
 .promo__wrapper {
@@ -19,6 +28,18 @@
   font-family: $worksans-Bold;
   margin-bottom: 13px;
   padding-top: 35px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 50px;
+    width: 80%;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 30px;
+    line-height: 32px;
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 
 .promo__text {
@@ -27,6 +48,10 @@
   line-height: 50px;
   color: $white-color;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .promo__text-main {
@@ -36,10 +61,22 @@
   color: $white-color;
   width: 38%;
   margin-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    width: 68%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .promo__buttons {
   margin-bottom: 150px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .promo__button-services {
@@ -48,6 +85,11 @@
   border: none;
   padding: 10px 45px;
   margin-right: 20px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 .promo__button-discover {
@@ -55,6 +97,10 @@
   background-color: transparent;
   border: 1px solid $white-color;
   padding: 7px 40px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .promo__button-toggle {

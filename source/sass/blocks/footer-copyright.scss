@@ -1,0 +1,26 @@
+.footer-copyright {
+  background-color: #051249;
+  padding: 40px 0;
+}
+
+.footer-copyright__list {
+  @include cancel-list;
+  @include page-width;
+  @include flex-row;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.footer-copyright__item {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-copyright__link {
+  color: $white-color;
+  text-decoration: none;
+}

@@ -1,9 +1,20 @@
 .quality {
+  @include section;
   background-image: url("../img/background-quality.png");
   background-repeat: no-repeat;
-  background-position: 42% -20px;
-  margin-bottom: 168px;
+  background-position: 42% 40px;
   background-size: 65% 113%;
+  padding-bottom: 160px;
+
+  @media (max-width: $tablet-width) {
+    background-size: 500px 300px;
+    background-position: 50% 0;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: none;
+  }
 }
 
 .quality__wrapper {
@@ -14,27 +25,36 @@
   margin-left: 60%;
   padding-top: 66px;
   width: 40%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 280px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+  }
 }
 
 .quality__span {
   @include section-span;
-  margin-bottom: 16px;
 }
 
 .quality__header {
   @include section-header;
-  letter-spacing: 0.8px;
-  margin-bottom: 25px;
 }
 
 .quality__text {
   @include section-text;
-  letter-spacing: 0.3px;
-  margin-bottom: 48px;
 }
 
 .quality__icon {
   margin-bottom: 20px;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
 }
 
 .quality__list {
@@ -81,9 +101,19 @@
   font-family: $worksans-Bold;
   margin-bottom: 10px;
   letter-spacing: 2.5px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .quality__item-text {
   @include item-text;
   letter-spacing: 1.06px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

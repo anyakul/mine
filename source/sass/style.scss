@@ -6,8 +6,6 @@
 
 // header
 @import "blocks/header.scss";
-@import "blocks/menu.scss";
-@import "blocks/login.scss";
 @import "blocks/promo.scss";
 
 
@@ -17,3 +15,10 @@
 @import "blocks/worker.scss";
 @import "blocks/portfolio.scss";
 @import "blocks/team.scss";
+@import "blocks/opinion.scss";
+@import "blocks/faq.scss";
+@import "blocks/blog.scss";
+
+//footer
+@import "blocks/footer-top.scss";
+@import "blocks/footer-copyright.scss";

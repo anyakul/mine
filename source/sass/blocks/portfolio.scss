@@ -1,11 +1,18 @@
 .portfolio {
   @include page-width;
-  margin-bottom: 100px;
+  @include section;
 }
 
 .portfolio__row {
-  @include flex-row;
   align-items: center;
+}
+
+.portfolio__buttons-toggles {
+  margin-top: -33px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .portfolio__button-toggle {
@@ -32,32 +39,30 @@
 
 .portfolio__span {
   @include section-span;
-  margin-bottom: 14px;
 }
 
 .portfolio__header {
   @include section-header;
-  margin-bottom: 68px;
   width: 50%;
 }
 
 .portfolio__list {
-  @include flex-row;
-  @include cancel-list;
+  @include section-list;
 }
 
 .portfolio__item {
+  @include section-item;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  padding: 33px 15px;
   padding-top: 33px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   margin-bottom: 20px;
-  width: 29%;
+  width: 32%;
 }
 
 .portfolio__item-wrapper {
   width: 94%;
   margin: 0 auto;
+  padding: 0 22px;
 }
 
 .portfolio__item-span {

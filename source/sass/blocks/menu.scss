@@ -1,9 +1,0 @@
-.menu {
-  @include flex-row;
-  @include cancel-list;
-  width: 45%;
-}
-
-.menu__link {
-  @include white-link;
-}

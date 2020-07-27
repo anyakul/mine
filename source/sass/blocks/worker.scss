@@ -1,10 +1,16 @@
 .worker {
   background: linear-gradient(145deg, #e663f9, #8930dd);
   background-image: url("../img/background-worker.png");
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 120px;
   vertical-align: top;
+  padding-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    height: 100%;
+    padding-bottom: 130px;
+    margin-bottom: 0;
+  }
 }
 
 .worker__wrapper {
@@ -12,7 +18,11 @@
   @include flex-row;
   padding-top: 80px;
   align-items: top;
-  min-height: 80%;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    padding-top: 20px;
+  }
 }
 
 .worker__header {
@@ -20,22 +30,55 @@
   color: $white-color;
   font-weight: bold;
   margin-bottom: 55px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 30px;
+    line-height: 32px;
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 
 .worker__image {
-  width: 670px;
+  width: 55%;
   height: 545px;
   padding-top: 45px;
   border-radius: 27px;
+  margin-right: 30px;
+
+  @media (max-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    padding-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding-top: 0;
+  }
 }
 
 .worker__text {
   width: 34%;
   margin-top: 38px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .worker__link {
   @include button;
   background: linear-gradient(45deg, #2bb6c2, #6ad3aa);
   padding: 20px 40px;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    display: block;
+  }
 }

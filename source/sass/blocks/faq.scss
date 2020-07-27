@@ -1,0 +1,82 @@
+.faq {
+  @include section;
+  background-image: url("../img/background-faq.png");
+  background-repeat: no-repeat;
+  background-position: 9% 90px;
+  background-size: 34% 87%;
+  padding-top: 90px;
+
+  @media (max-width: $tablet-width) {
+    background-size: 200px;
+    padding-top: 260px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: none;
+    padding-top: 50px;
+  }
+}
+
+.faq__wrapper {
+  @include page-width;
+}
+
+.faq__column {
+  margin-left: 60%;
+  padding-top: 66px;
+  width: 40%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.faq__span {
+  @include section-span;
+}
+
+.faq__header {
+  @include section-header;
+}
+
+.faq__list {
+  @include cancel-list;
+}
+
+.faq__icon {
+  margin-bottom: 30px;
+}
+
+.faq__item {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/background-faq-item.png");
+  }
+}
+
+.faq__item-header {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faq__item-text {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
