@@ -4,17 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Suka</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <!--<style>
-    HTML {
-    opacity: 0.5;
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      background-image: url( "img/home_01.jpg" );
-      z-index: 10;
-    }
-  </style>-->
+  <title>Mine</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -26,22 +17,38 @@
         <h1 class="visually-hidden">Лого и меню</h1>
           <div class="header__logo logo">
             <a class="logo__link">
-              <img class="logo__icon" width="116" height="51" src="img/icon-logo.svg" alt="suka">
+              <img class="logo__icon" width="116" height="51" src="img/icon-logo.svg" alt="mine">
             </a>
           </div>
-          <ul class="header__menu menu">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Portfolio</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#home">Quality</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#services">Services</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#team">Team</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#opinion">Opinion</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#faq">FAQ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#blog">Blog</a>
+            </li>
           </ul>
-          <div class="header__login login">
-            <select class="login__language-select">
+          <div class="header__login">
+            <select class="header__login-language-select">
               <option>Eng</option>
               <option>Rus</option>
             </select>
-            <a class="login__avatar"><img class="login__icon" src="img/icon-login.svg" alt="login"></a>
+            <a class="header__login-avatar"><img class="header__login-icon" src="img/icon-login.svg" alt="login"></a>
         </div>
       </section>
       <section class="promo">
@@ -54,15 +61,19 @@
             <button class="promo__button-discover">Discover more</button>
           </div>
           <div class="promo__buttons-toggles">
-            <button class="promo__button-toggle promo__button-toggle--left"><span class="visually-hidden">Next</span></button>
-            <button class="promo__button-toggle promo__button-toggle--right"><span class="visually-hidden">Previous</span></button>
+            <button class="promo__button-toggle promo__button-toggle--left">
+              <span class="visually-hidden">Next</span>
+            </button>
+            <button class="promo__button-toggle promo__button-toggle--right">
+              <span class="visually-hidden">Previous</span>
+            </button>
           </div>
         </div>
       </section>
     </div>
   </header>
   <main class="main">
-    <section class="quality">
+    <section class="quality" id="quality">
       <div class="quality__wrapper">
         <div class="quality__column">
           <p class="quality__span">Quality is the best</p>
@@ -83,36 +94,46 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__wrapper">
         <p class="services__span">Services</p>
         <h1 class="services__header">What We Do?</h1>
         <img class="services__icon" src="img/icon-wave-line.svg" alt="login">
         <ul class="services__list">
           <li class="services__item services__item--digital-marketing">
+            <div class="services__item-wrapper">
               <p class="services__item-header">Digital marketing</p>
               <p class="services__item-text">Volupta esse cllum doloe  nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
-              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+              <a class="services__item-link">Read more
+                <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login">
+              </a>
+            </div>
           </li>
           <li class="services__item services__item--web-analysis">
-            <div class="services__item-wrapper ">
+            <div class="services__item-wrapper">
               <p class="services__item-header">Web Analysis</p>
               <p class="services__item-text">Volupta esse cllum doloe nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
-              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+              <a class="services__item-link">Read more
+                <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login">
+              </a>
             </div>
           </li>
           <li class="services__item services__item--market-analysis">
             <div class="services__item-wrapper">
               <p class="services__item-header">Market Analysis</p>
               <p class="services__item-text">Volupta esse cllum doloe nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
-              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+              <a class="services__item-link">Read more
+                <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login">
+              </a>
             </div>
           </li>
           <li class="services__item services__item--brand-identity">
             <div class="services__item-wrapper">
               <p class="services__item-header">Brand Identity</p>
               <p class="services__item-text">Volupta esse cllum doloe nulla pariat secepteur sint esse cllum doloe occaec officia deserunt</p>
-              <a class="services__item-link">Read more <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login"></a>
+              <a class="services__item-link">Read more
+                <img class="services__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login">
+              </a>
             </div>
           </li>
         </ul>
@@ -128,16 +149,16 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="portfolio__row">
         <div class="portfolio__text">
           <p class="portfolio__span">Our Portfolio</p>
-          <h1 class="portfolio__header">Some work for our honorable clients.</h1>
+          <h2 class="portfolio__header">Some work for our honorable clients.</h2>
         </div>
         <div class="portfolio__buttons-toggles">
-            <button class="portfolio__button-toggle portfolio__button-toggle--left"><span class="visually-hidden">Next</span></button>
-            <button class="portfolio__button-toggle portfolio__button-toggle--right"><span class="visually-hidden">Previous</span></button>
-          </div>
+          <button class="portfolio__button-toggle portfolio__button-toggle--left"><span class="visually-hidden">Next</span></button>
+          <button class="portfolio__button-toggle portfolio__button-toggle--right"><span class="visually-hidden">Previous</span></button>
+        </div>
         <ul class="portfolio__list">
           <li class="portfolio__item">
             <div class="portfolio__item-wrapper">
@@ -164,217 +185,375 @@
             </div>
           </li>
         </ul>
-    </div></section>
-    <section class="team">
+      </div>
+    </section>
+    <section class="team" id="team">
       <div class="team__wrapper">
         <p class="team__span">Team Members</p>
-        <h1 class="team__header">Meet our team</h1>
+        <h2 class="team__header">Meet our team</h2>
         <img class="team__icon" src="img/icon-wave-line.svg" alt="login">
         <ul class="team__list">
           <li class="team__item">
-            <img class="team__image" src="img/icon-login.svg" alt="login">
-            <p class="team__item-header">Lindsay Andrews</p>
-            <p class="team__item-text">Product Manager</p>
+            <img class="team__image" src="img/Lindsay Andrews.png" alt="Lindsay Andrews">
+            <div class="team__item-wrapper"></div>
+            <div class="team__item-header-profession">
+              <p class="team__item-header">Lindsay Andrews</p>
+              <p class="team__item-text">Product Manager</p>
+              <ul class="team__item-social-list">
+                <li class="team__item-social-item">
+                  <svg width="30" height="80">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="40" height="100">
+                    <use xlink:href="img/sprite.svg#skype"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="30" height="80">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="40" height="100">
+                    <use xlink:href="img/sprite.svg#skype"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="team__item">
-            <img class="team__image" src="img/icon-login.svg" alt="login">
-            <p class="team__item-header">Gene Richardson</p>
-            <p class="team__item-text">Product Manager</p>
+            <img class="team__image" src="img/Gene Richardson.png" alt="Gene Richardson">
+            <div class="team__item-wrapper"></div>
+            <div class="team__item-header-profession">
+              <p class="team__item-header">Gene Richardson</p>
+              <p class="team__item-text">Product Manager</p>
+              <ul class="team__item-social-list">
+                <li class="team__item-social-item">
+                  <svg width="30" height="80">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="40" height="100">
+                    <use xlink:href="img/sprite.svg#skype"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="30" height="80">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="40" height="100">
+                    <use xlink:href="img/sprite.svg#skype"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="team__item">
-            <img class="team__image" src="img/icon-login.svg" alt="login">
-            <p class="team__item-header">Blanca Roberts</p>
-            <p class="team__item-text">Product Manager</p>
+            <img class="team__image" src="img/Bianca Roberts.png" alt="Gene Richardson">
+            <div class="team__item-wrapper"></div>
+            <div class="team__item-header-profession">
+              <p class="team__item-header">Bianca Roberts</p>
+              <p class="team__item-text">Product Manager</p>
+              <ul class="team__item-social-list">
+                <li class="team__item-social-item">
+                  <svg width="30" height="80">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="40" height="100">
+                    <use xlink:href="img/sprite.svg#skype"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="30" height="80">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="40" height="100">
+                    <use xlink:href="img/sprite.svg#skype"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="team__item">
-            <img class="team__image" src="img/icon-login.svg" alt="login">
-            <p class="team__item-header">Kristine Carpenter</p>
-            <p class="team__item-text">Product Manager</p>
+            <img class="team__image" src="img/Kristine Carpenter.png" alt="Gene Richardson">
+            <div class="team__item-wrapper"></div>
+            <div class="team__item-header-profession">
+              <p class="team__item-header">Kristine Carpenter</p>
+              <p class="team__item-text">Product Manager</p>
+              <ul class="team__item-social-list">
+                <li class="team__item-social-item">
+                  <svg width="30" height="80">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="40" height="100">
+                    <use xlink:href="img/sprite.svg#skype"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="30" height="80">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="team__item-social-item">
+                  <svg width="40" height="100">
+                    <use xlink:href="img/sprite.svg#skype"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
     </section>
-    <section class="opinion">
+    <section class="opinion" id="opinion">
       <div class="opinion__wrapper">
-        <p class="opinion__header">We are creative agency, what our clients say about us!</p>
-        <h1 class="opinion__header">Meet our team</h1>
-        <button class="opinion__button-toggle" type="submit"><span class="visually-hidden">Next</span></button>
-        <button class="opinion__button-toggle" type="submit"><span class="visually-hidden">Previous</span></button>
+        <div class="opinion__header-buttons">
+          <h2 class="opinion__header">We are creative agency, what our clients say about us!</h2>
+          <button class="opinion__button-toggle opinion__button-toggle--left" type="submit">
+            <span class="visually-hidden">Next</span>
+          </button>
+          <button class="opinion__button-toggle opinion__button-toggle--right" type="submit">
+            <span class="visually-hidden">Previous</span>
+          </button>
+        </div>
         <ul class="opinion__list">
           <li class="opinion__item">
-            <img class="opinion__image" src="img/icon-login.svg" alt="login">
-            <p class="opinion__item-header">Ut enim ad minim venia quis nostrud ex ea commodo consequat dolor reore enderit in voluptate velit esse dolore nulla partiatur sint</p>
-            <p class="opinion__item-text">Madeline Adams</p>
-            <p class="opinion__item-span">UI/UX Designer</p>
+            <div class="opinion__item-wrapper">
+              <div class="opinion__image-wrapper">
+                <img class="opinion__image" src="img/Kristine Carpenter.png" alt="login">
+              </div>
+              <ul class="opinion__item-star-list">
+                <li class="opinion__item-star-item">
+                  <img class="opinion__item-star-image" src="img/star-yellow.png" width="10" height="10" alt="star-yellow">
+                </li>
+                <li class="opinion__item-star-item">
+                  <img class="team__item-star-image" src="img/star-yellow.png" width="10" height="10" alt="star-yellow">
+                </li>
+                <li class="opinion__item-star-item">
+                  <img class="team__item-star-image" src="img/star-yellow.png" width="10" height="10" alt="star-yellow">
+                </li>
+                <li class="opinion__item-star-item">
+                  <img class="team__item-star-image" src="img/star-white.png" width="10" height="10" alt="star-white">
+                </li>
+                <li class="opinion__item-star-item">
+                  <img class="team__item-star-image" src="img/star-white.png" width="10" height="10" alt="star-white">
+                </li>
+              </ul>
+              <p class="opinion__item-text">Ut enim ad minim venia quis nostrud ex ea commodo consequat dolor reore enderit in voluptate velit esse dolore nulla partiatur sint</p>
+              <p class="opinion__item-author">Madeline Adams</p>
+              <p class="opinion__item-span">UI/UX Designer</p>
+            </div>
           </li>
           <li class="opinion__item">
-            <img class="opinion__image" src="img/icon-login.svg" alt="login">
-            <p class="opinion__item-header">Ut enim ad minim venia quis nostrud ex ea commodo consequat dolor reore enderit in voluptate velit esse dolore nulla partiatur sint</p>
-            <p class="opinion__item-text">Madeline Adams</p>
-            <p class="opinion__item-span">UI/UX Designer</p>
+            <div class="opinion__item-wrapper">
+              <div class="opinion__image-wrapper">
+                <img class="opinion__image" src="img/Kristine Carpenter.png" alt="login">
+              </div>
+              <ul class="opinion__item-star-list">
+                <li class="opinion__item-star-item">
+                  <img class="opinion__item-star-image" src="img/star-yellow.png" width="10" height="10" alt="star-yellow">
+                </li>
+                <li class="opinion__item-star-item">
+                  <img class="team__item-star-image" src="img/star-yellow.png" width="10" height="10" alt="star-yellow">
+                </li>
+                <li class="opinion__item-star-item">
+                  <img class="team__item-star-image" src="img/star-yellow.png" width="10" height="10" alt="star-yellow">
+                </li>
+                <li class="opinion__item-star-item">
+                  <img class="team__item-star-image" src="img/star-white.png" width="10" height="10" alt="star-white">
+                </li>
+                <li class="opinion__item-star-item">
+                  <img class="team__item-star-image" src="img/star-white.png" width="10" height="10" alt="star-white">
+                </li>
+              </ul>
+              <p class="opinion__item-text">Ut enim ad minim venia quis nostrud ex ea commodo consequat dolor reore enderit in voluptate velit esse dolore nulla partiatur sint</p>
+              <p class="opinion__item-author">Madeline Adams</p>
+              <p class="opinion__item-span">UI/UX Designer</p>
+            </div>
           </li>
         </ul>
-        <a class="services__link">Other Services</a>
       </div>
     </section>
-    <section class="faq">
+    <section class="faq" id="faq">
       <div class="faq__wrapper">
-        <p class="faq__span">faq</p>
-        <h1 class="faq__header">Frequently Asekd Question</h1>
-        <ul class="faq__list">
-          <li class="faq__item">
-            <p class="faq__item-header">01. How much does it cost?</p>
-            <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
-          </li>
-          <li class="faq__item">
-            <p class="faq__item-header">01. How much does it cost?</p>
-            <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
-          </li>
-          <li class="faq__item">
-            <p class="faq__item-header">01. How much does it cost?</p>
-            <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
-          </li>
-          <li class="faq__item">
-            <p class="faq__item-header">01. How much does it cost?</p>
-            <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
-          </li>
-          <li class="faq__item">
-            <p class="faq__item-header">01. How much does it cost?</p>
-            <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
-          </li>
-        </ul>
+        <div class="faq__column">
+          <p class="faq__span">faq</p>
+          <h1 class="faq__header">Frequently Asekd Question</h1>
+          <img class="faq__icon" src="img/icon-wave-line.svg" alt="login">
+          <ul class="faq__list">
+            <li class="faq__item">
+              <button class="faq__item-header">01. How much does it cost?</button>
+              <p class="faq__item-text faq__item-text--active">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__item-header">02. How much does it cost?</p>
+              <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__item-header">03. How much does it cost?</p>
+              <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__item-header">04. How much does it cost?</p>
+              <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__item-header">05. How much does it cost?</p>
+              <p class="faq__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla rariatur. Excepteur ssint occaecat cupdarat non proident sunt deserunt</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
       <div class="blog__wrapper">
-        <p class="blog__span">faq</p>
-        <h1 class="blog__header">Frequently Asekd Question</h1>
+        <p class="blog__span">Blog Post</p>
+        <h1 class="blog__header">Some latest news from our blog list</h1>
         <ul class="blog__list">
           <li class="blog__item">
-            <img class="blog__image" src="img/icon-login.svg" alt="login">
-            <p class="blog__item-header">Right at the coast of their large language ocean.</p>
-            <p class="blog__item-author">Aribend Meirenson</p>
-            <p class="blog__item-date">05.10.2019</p>
-            <a class="blog__item-link">Read more</a>
+            <p class="blog__item-image blog__item-image--first"></p>
+            <div class="blog__item-text">
+              <p class="blog__item-header">Right at the coast of their large language ocean.</p>
+              <p class="blog__item-author">Aribend Meirenson</p>
+              <p class="blog__item-date">05.10.2019</p>
+              <a class="blog__item-link">Read more
+                <img class="blog__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login">
+              </a>
+            </div>
           </li>
           <li class="blog__item">
-            <img class="blog__image" src="img/icon-login.svg" alt="login">
-            <p class="blog__item-header">Right at the coast of their large language ocean.</p>
-            <p class="blog__item-author">Aribend Meirenson</p>
-            <p class="blog__item-date">05.10.2019</p>
-            <a class="blog__item-link">Read more</a>
+            <p class="blog__item-image blog__item-image--second"></p>
+            <div class="blog__item-text">
+              <p class="blog__item-header">Right at the coast of their large language ocean.</p>
+              <p class="blog__item-author">Aribend Meirenson</p>
+              <p class="blog__item-date">05.10.2019</p>
+              <a class="blog__item-link">Read more
+                <img class="blog__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login">
+              </a>
+            </div>
           </li>
           <li class="blog__item">
-            <img class="blog__image" src="img/icon-login.svg" alt="login">
-            <p class="blog__item-header">Right at the coast of their large language ocean.</p>
-            <p class="blog__item-author">Aribend Meirenson</p>
-            <p class="blog__item-date">05.10.2019</p>
-            <a class="blog__item-link">Read more</a>
+            <p class="blog__item-image blog__item-image--third"></p>
+            <div class="blog__item-text">
+              <p class="blog__item-header">Right at the coast of their large language ocean.</p>
+              <p class="blog__item-author">Aribend Meirenson</p>
+              <p class="blog__item-date">05.10.2019</p>
+              <a class="blog__item-link">Read more
+                <img class="blog__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login">
+              </a>
+            </div>
           </li>
           <li class="blog__item">
-            <img class="blog__image" src="img/icon-login.svg" alt="login">
-            <p class="blog__item-header">Right at the coast of their large language ocean.</p>
-            <p class="blog__item-author">Aribend Meirenson</p>
-            <p class="blog__item-date">05.10.2019</p>
-            <a class="blog__item-link">Read more</a>
+            <p class="blog__item-image blog__item-image--fourth"></p>
+            <div class="blog__item-text">
+              <p class="blog__item-header">Right at the coast of their large language ocean.</p>
+              <p class="blog__item-author">Aribend Meirenson</p>
+              <p class="blog__item-date">05.10.2019</p>
+              <a class="blog__item-link">Read more
+                <img class="blog__item-icon" src="img/icon-toggle-right-small.svg" width="7" height="7" alt="login">
+              </a>
+            </div>
           </li>
         </ul>
       </div>
-    </section>
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <h1 class="contacts__header">Contact Us</h1>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <p class="contacts__item-header">Phone</p>
-            <p class="contacts__item-author">+0092 796 568 124</p>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__item-header">Email</p>
-            <p class="contacts__item-author">support24@gmail.com</p>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__item-header">Address</p>
-            <p class="contacts__item-author">839 Plymouth Rd. Tampa, FL 33604</p>
-          </li>
-        </ul>
-      </div>
-      <form class="form" method="POST" action="#">
-        <h1 class="contacts__header">Contact Us</h1>
-        <ul class="form__list">
-          <li class="form__item form__item--name">
-            <input class="form__item-input" type="text" name="name" id="name" placeholder="name:">
-          </li>
-          <li class="form__item form__item--phone">
-            <input class="form__item-input" type="tel" name="email" id="email" placeholder="Email">
-          </li>
-          <li class="form__item form__item--name">
-            <input class="form__item-input" type="text" name="subject" id="subject" placeholder="Subject:">
-          </li>
-          <li class="form__item form__item--phone">
-            <input class="form__item-input" type="tel" name="phone" id="phone" placeholder="Phone:">
-          </li>
-          <li class="form__item form__item--name">
-            <textarea class="form__item-input" type="text" name="message" id="message">Message</textarea>
-          </li>
-        </ul>
-        <button class="form__button" type="submit">Contact today</button>
-      </form>
     </section>
   </main>
   <footer class="footer">
-    <section class="company">
-      <h2 class="visually-hidden">Companies</h2>
-      <ul class="company__list">
-        <li class="company__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
-        <li class="contacts__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
-        <li class="contacts__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
-        <li class="company__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
-        <li class="contacts__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
-        <li class="contacts__item"><img class="blog__image" src="img/icon-login.svg" alt="login"></li>
-      </ul>
+    <section class="footer-top">
+      <div class="footer-top__wrapper">
+        <div class="footer-top__partners">
+          <h2 class="visually-hidden">Companies</h2>
+            <li class="footer-top__partners-item">
+              <img class="footer-top__partners-image" src="img/vetrov.png" alt="login">
+            </li>
+            <li class="footer-top__partners-item">
+              <img class="footer-top__partners-image" src="img/the-cube.png" alt="login">
+            </li>
+            <li class="footer-top__partners-item">
+              <img class="footer-top__partners-image" src="img/salana.png" alt="login">
+            </li>
+            <li class="footer-top__partners-item">
+              <img class="footer-top__partners-image" src="img/deters.png" alt="login">
+            </li>
+            <li class="footer-top__partners-item">
+              <img class="footer-top__partners-image" src="img/visla.png" alt="login">
+            </li>
+            <li class="footer-top__partners-item">
+              <img class="footer-top__partners-image" src="img/okta.png" alt="login">
+            </li>
+          
+        </div>
+        <div class="footer-top__lists">
+          <div class="footer-top__join">
+            <h2 class="footer-top__join-header">Join with the entrepreneur community for business.</h2>
+            <form class="footer-top__join-form" method="POST" action="#">
+              <input class="footer-top__join-form-input" type="email" name="name" id="name" placeholder="suka24@gmail.com">
+              <button class="footer-top__join-form-button" type="submit">Join Now</button>
+            </form>
+            <span class="footer-top__join-span">Subscribe today for update</span>
+          </div>
+          <div class="footer-top__group footer-top__group--support">
+            <h2 class="footer-top__group-header">Support</h2>
+            <ul class="footer-top__group-list">
+              <li class="footer-top__group-item"><a class="footer-top__group-link" href="#">Faq</a></li>
+              <li class="footer-top__group-item"><a class="footer-top__group-link" href="#">Contact us</a></li>
+              <li class="footer-top__group-item"><a class="footer-top__group-link" href="#">Outlook plugins</a></li>
+              <li class="footer-top__support-item"><a class="footer-top__group-link" href="#">Live chatting</a></li>
+            </ul>
+          </div>
+          <div class="footer-top__group footer-top__group--about-us">
+            <h2 class="footer-top__group-header">Support</h2>
+            <ul class="footer-top__group-list">
+              <li class="footer-top__group-item"><a class="footer-top__group-link" href="#">About us</a></li>
+              <li class="footer-top__group-item"><a class="footer-top__group-link" href="#">Features items</a></li>
+              <li class="footer-top__group-item"><a class="footer-top__group-link" href="#">Live Streaming</a></li>
+              <li class="footer-top__group-item"><a class="footer-top__group-link" href="#">Privacy & Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-top__group footer-top__group--social">
+            <h2 class="footer-top__group-header">Support</h2>
+            <ul class="footer-top__group-list">
+                <li class="footer-top__group-item">
+                  <svg width="30" height="80">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="footer-top__group-item">
+                  <svg width="40" height="100">
+                    <use xlink:href="img/sprite.svg#skype"></use>
+                  </svg>
+                </li>
+                <li class="footer-top__group-item">
+                  <svg width="30" height="80">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="footer-top__group-item">
+                  <svg width="40" height="100">
+                    <use xlink:href="img/sprite.svg#skype"></use>
+                  </svg>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="footer__list">
-      <div class="join">
-        <h2 class="join__header">Join with the entrepreneur community for business.</h2>
-        <form class="join__form" method="POST" action="#">
-          <input class="join__form-input" type="text" name="name" id="name" placeholder="suka24@gmail.com">
-          <button class="join__form-button" type="submit">Join Now</button>
-        </form>
-      </div>
-      <div class="support">
-        <h2 class="support__header">Support</h2>
-        <ul class="support__list">
-          <li class="support__item"><a class="support__link" href="#">Faq</a></li>
-          <li class="support__item"><a class="support__link" href="#">Contact us</a></li>
-          <li class="support__item"><a class="support__link" href="#">Outlook plugins</a></li>
-          <li class="support__item"><a class="support__link" href="#">Live chatting</a></li>
-        </ul>
-      </div>
-      <div class="about-us">
-        <h2 class="about-us__header">Support</h2>
-        <ul class="about-us__list">
-          <li class="about-us__item"><a class="about-us__link" href="#">About us</a></li>
-          <li class="about-us__item"><a class="about-us__link" href="#">Features items</a></li>
-          <li class="about-us__item"><a class="about-us__link" href="#">Live Streaming</a></li>
-          <li class="about-us__item"><a class="about-us__link" href="#">Privacy & Policy</a></li>
-        </ul>
-      </div>
-      <div class="social">
-        <h2 class="social__header">Support</h2>
-        <ul class="social__list">
-          <li class="social__item"><a class="social__link" href="#">facebook</a></li>
-          <li class="social__item"><a class="social__link" href="#">Twitter</a></li>
-          <li class="social__item"><a class="social__link" href="#">Google</a></li>
-          <li class="social__item"><a class="social__link" href="#">Skype</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="footer__copyright copyright">
-      <ul class="copyright__list">
-        <li class="copyright__item"><a class="support__link" href="#">Copyright’2019. All Rights Reserved</a></li>
-        <li class="copyright__item"><a class="support__link" href="#">452 Center Dr. Littleton, CO 80123</a></li>
-        <li class="copyright__item"><a class="support__link" href="#"><img class="logo__icon" src="img/logo.svg" alt="suka"></a></li>
+    <section class="footer-copyright">
+      <ul class="footer-copyright__list">
+        <li class="footer-copyright__item"><a class="footer-copyright__link" href="#">Copyright’2019. All Rights Reserved</a></li>
+        <li class="footer-copyright__item"><a class="footer-copyright__link" href="#">452 Center Dr. Littleton, CO 80123</a></li>
+        <li class="footer-copyright__item"><a class="footer-copyright__link" href="#"><img class="logo__icon" src="img/icon-logo.svg" alt="mine"></a></li>
       </ul>
     </section>
   </footer>
